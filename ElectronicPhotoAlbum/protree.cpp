@@ -1,6 +1,6 @@
 #include "protree.h"
 #include "ui_protree.h"
-
+//项目目录树
 ProTree::ProTree(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ProTree)
@@ -18,4 +18,7 @@ ProTree::~ProTree()
 void ProTree::AddProToTree(const QString &name, const QString &path)
 {
     ui->treeWidget->AddProToTree(name,path);
+
+
+
 }
